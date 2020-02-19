@@ -6,32 +6,6 @@ var req = new Request(url);
 
 let container = document.getElementById('noticias');
 
-// fetch(req)
-// .then(function (response) {
-//     response.json().then(function (data) {
-//             data.articles.forEach(function (article) {
-//                 container.innerHTML += `
-//                 <div class="container">
-//                 <div class="col-4">
-//                     <div class="card mt-5" id="card">
-//                         <div class="card-header">
-//                             <h2 class="card-title">${article.title}</h2>
-//                         </div>
-//                         <div class="card-body">
-//                             <img src="${article.urlToImage}" width="180" height="180">
-//                             <p>${article.description}</p>
-//                         </div>
-//                         <div class="card-footer">
-//                             <a href="${article.url}" class="btn btn-primary">Ver notícia</a>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//             `
-//             })
-//         })
-// }
-
 fetch(req)
     .then((response) => response.json())
     .then(function(data) {
